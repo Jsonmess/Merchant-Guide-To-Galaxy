@@ -7,7 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "IntergalacticSymbol.h"
+#import "IntergalacticConversionRule.h"
 @interface Galaxy_sMerchantsGuideTests : XCTestCase
 
 @end
@@ -24,16 +25,43 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testMapping
+{
+    IntergalacticSymbol * testSymbol = [[IntergalacticSymbol alloc] init];
+    NSInteger x = [testSymbol getArabicSymbolWithRomanSymbol:@"X"];
+    NSInteger i = [testSymbol getArabicSymbolWithRomanSymbol:@"I"];
+    NSInteger l = [testSymbol getArabicSymbolWithRomanSymbol:@"L"];
+    NSInteger d = [testSymbol getArabicSymbolWithRomanSymbol:@"D"];
+    NSInteger c = [testSymbol getArabicSymbolWithRomanSymbol:@"C"];
+    NSInteger m = [testSymbol getArabicSymbolWithRomanSymbol:@"M"];
+    NSInteger v = [testSymbol getArabicSymbolWithRomanSymbol:@"V"];
+    NSAssert(x==10, @"x faild");
+    NSAssert(i==1, @"i faild");
+    NSAssert(l==50, @"l faild");
+    NSAssert(d==500, @"d faild");
+    NSAssert(c==100, @"c faild");
+    NSAssert(v==5, @"v faild");
+    NSAssert(m==1000, @"m faild");
 }
 
+
+- (void)testArabicToRomanNumber
+{
+    IntergalacticConversionRule *rule = [[IntergalacticConversionRule alloc] init];
+    NSString *romanNumber = [rule getRomanNumberWithArabicNumber:1903];
+    NSAssert([romanNumber isEqualToString:@"MCMIII"], @"arabicToRomanNumber faild");
+}
+
+- (void)testRomanNumberToArabic
+{
+    IntergalacticConversionRule *rule = [[IntergalacticConversionRule alloc] init];
+    NSInteger arabicNumber = [rule getArabicNumberWithRomanNumber:@"MCMXLIV"];
+    NSAssert(arabicNumber == 1944, @"arabicToRomanNumber faild");
+}
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
 }
-
 @end

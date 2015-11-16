@@ -14,6 +14,14 @@
 		295CAF4C1BF3818A00FF07A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295CAF4B1BF3818A00FF07A9 /* Assets.xcassets */; };
 		295CAF4F1BF3818A00FF07A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295CAF4D1BF3818A00FF07A9 /* LaunchScreen.storyboard */; };
 		295CAF5A1BF3818A00FF07A9 /* Galaxy_sMerchantsGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 295CAF591BF3818A00FF07A9 /* Galaxy_sMerchantsGuideTests.m */; };
+		298B27321BF9DB3F005BF967 /* IntergalacticSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B27291BF9DB3F005BF967 /* IntergalacticSymbol.m */; };
+		298B27331BF9DB3F005BF967 /* IntergalacticConversionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B272B1BF9DB3F005BF967 /* IntergalacticConversionRule.m */; };
+		298B27341BF9DB3F005BF967 /* IntergalacticConversionRuleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B272D1BF9DB3F005BF967 /* IntergalacticConversionRuleTool.m */; };
+		298B27361BF9DB3F005BF967 /* fileContentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B27311BF9DB3F005BF967 /* fileContentObject.m */; };
+		298B27381BFA2A45005BF967 /* sentences.txt in Resources */ = {isa = PBXBuildFile; fileRef = 298B27371BFA2A45005BF967 /* sentences.txt */; };
+		298B27391BFA5EE9005BF967 /* IntergalacticSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B27291BF9DB3F005BF967 /* IntergalacticSymbol.m */; };
+		298B273A1BFA5EEF005BF967 /* IntergalacticConversionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B272B1BF9DB3F005BF967 /* IntergalacticConversionRule.m */; };
+		298B273B1BFA5EF2005BF967 /* IntergalacticConversionRuleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 298B272D1BF9DB3F005BF967 /* IntergalacticConversionRuleTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,15 @@
 		295CAF551BF3818A00FF07A9 /* Galaxy'sMerchantsGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Galaxy'sMerchantsGuideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		295CAF591BF3818A00FF07A9 /* Galaxy_sMerchantsGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Galaxy_sMerchantsGuideTests.m; sourceTree = "<group>"; };
 		295CAF5B1BF3818A00FF07A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298B27281BF9DB3F005BF967 /* IntergalacticSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntergalacticSymbol.h; sourceTree = "<group>"; };
+		298B27291BF9DB3F005BF967 /* IntergalacticSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntergalacticSymbol.m; sourceTree = "<group>"; };
+		298B272A1BF9DB3F005BF967 /* IntergalacticConversionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntergalacticConversionRule.h; sourceTree = "<group>"; };
+		298B272B1BF9DB3F005BF967 /* IntergalacticConversionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntergalacticConversionRule.m; sourceTree = "<group>"; };
+		298B272C1BF9DB3F005BF967 /* IntergalacticConversionRuleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntergalacticConversionRuleTool.h; sourceTree = "<group>"; };
+		298B272D1BF9DB3F005BF967 /* IntergalacticConversionRuleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntergalacticConversionRuleTool.m; sourceTree = "<group>"; };
+		298B27301BF9DB3F005BF967 /* fileContentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileContentObject.h; sourceTree = "<group>"; };
+		298B27311BF9DB3F005BF967 /* fileContentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fileContentObject.m; sourceTree = "<group>"; };
+		298B27371BFA2A45005BF967 /* sentences.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sentences.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +98,7 @@
 		295CAF3E1BF3818A00FF07A9 /* Galaxy'sMerchantsGuide */ = {
 			isa = PBXGroup;
 			children = (
+				298B27271BF9DB30005BF967 /* MerchantsGuide */,
 				295CAF421BF3818A00FF07A9 /* AppDelegate.h */,
 				295CAF431BF3818A00FF07A9 /* AppDelegate.m */,
 				295CAF451BF3818A00FF07A9 /* ViewController.h */,
@@ -97,6 +115,7 @@
 		295CAF3F1BF3818A00FF07A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				298B27371BFA2A45005BF967 /* sentences.txt */,
 				295CAF401BF3818A00FF07A9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -109,6 +128,21 @@
 				295CAF5B1BF3818A00FF07A9 /* Info.plist */,
 			);
 			path = "Galaxy'sMerchantsGuideTests";
+			sourceTree = "<group>";
+		};
+		298B27271BF9DB30005BF967 /* MerchantsGuide */ = {
+			isa = PBXGroup;
+			children = (
+				298B27281BF9DB3F005BF967 /* IntergalacticSymbol.h */,
+				298B27291BF9DB3F005BF967 /* IntergalacticSymbol.m */,
+				298B272A1BF9DB3F005BF967 /* IntergalacticConversionRule.h */,
+				298B272B1BF9DB3F005BF967 /* IntergalacticConversionRule.m */,
+				298B272C1BF9DB3F005BF967 /* IntergalacticConversionRuleTool.h */,
+				298B272D1BF9DB3F005BF967 /* IntergalacticConversionRuleTool.m */,
+				298B27301BF9DB3F005BF967 /* fileContentObject.h */,
+				298B27311BF9DB3F005BF967 /* fileContentObject.m */,
+			);
+			path = MerchantsGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +228,7 @@
 				295CAF4F1BF3818A00FF07A9 /* LaunchScreen.storyboard in Resources */,
 				295CAF4C1BF3818A00FF07A9 /* Assets.xcassets in Resources */,
 				295CAF4A1BF3818A00FF07A9 /* Main.storyboard in Resources */,
+				298B27381BFA2A45005BF967 /* sentences.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298B27361BF9DB3F005BF967 /* fileContentObject.m in Sources */,
+				298B27331BF9DB3F005BF967 /* IntergalacticConversionRule.m in Sources */,
+				298B27321BF9DB3F005BF967 /* IntergalacticSymbol.m in Sources */,
+				298B27341BF9DB3F005BF967 /* IntergalacticConversionRuleTool.m in Sources */,
 				295CAF471BF3818A00FF07A9 /* ViewController.m in Sources */,
 				295CAF441BF3818A00FF07A9 /* AppDelegate.m in Sources */,
 				295CAF411BF3818A00FF07A9 /* main.m in Sources */,
@@ -221,6 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298B27391BFA5EE9005BF967 /* IntergalacticSymbol.m in Sources */,
+				298B273A1BFA5EEF005BF967 /* IntergalacticConversionRule.m in Sources */,
+				298B273B1BFA5EF2005BF967 /* IntergalacticConversionRuleTool.m in Sources */,
 				295CAF5A1BF3818A00FF07A9 /* Galaxy_sMerchantsGuideTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Galaxy'sMerchantsGuide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jsonmess.Galaxy-sMerchantsGuide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Galaxy'sMerchantsGuide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jsonmess.Galaxy-sMerchantsGuide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +444,7 @@
 				295CAF601BF3818A00FF07A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		295CAF611BF3818A00FF07A9 /* Build configuration list for PBXNativeTarget "Galaxy'sMerchantsGuideTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +453,7 @@
 				295CAF631BF3818A00FF07A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
