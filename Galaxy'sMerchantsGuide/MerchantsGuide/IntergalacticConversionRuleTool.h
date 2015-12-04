@@ -28,4 +28,5 @@
  *  @return 输出
  */
 + (BOOL)checkIsTheAvailableNumberStr:(NSString *)str;
+
 @end
