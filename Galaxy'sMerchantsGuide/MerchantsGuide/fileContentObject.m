@@ -89,11 +89,11 @@
               }
            }
            //3.计算
-           NSInteger tmpNumber = [self.intergalacticConversionRule getArabicNumberWithRomanNumber:convertStr];
+           double tmpNumber = [self.intergalacticConversionRule getArabicNumberWithRomanNumber:convertStr];
            double tmpResut = 0;
            if (tmpNumber > 0)
            {
-               tmpResut = theValue/tmpNumber;
+               tmpResut = (double)theValue/tmpNumber;
            }
         
            [self.userMappingDic setObject:[NSString stringWithFormat:@"%lf",tmpResut] forKey:unknownStr];
@@ -136,7 +136,7 @@
          }
          //计算
          NSInteger tmpNumber = [self.intergalacticConversionRule getArabicNumberWithRomanNumber:convertStr];
-         NSInteger knownNumber = [[self.userMappingDic objectForKey:unRomanStr] integerValue];
+         double knownNumber = [[self.userMappingDic objectForKey:unRomanStr] floatValue];
          knownNumber = knownNumber == 0 ? 1:knownNumber;
          theValue = tmpNumber * knownNumber;
          NSString * tmpResult = [NSString stringWithFormat:@"%@ is %ld Credits",rightStr,(NSInteger)theValue];
